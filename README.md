@@ -23,7 +23,7 @@ The bundle uses Harness's built-in `dsh-skill-filesystem` provider and `dsh-tool
 Clone this repository, then install the bundle from its directory with the Harness plugin manager:
 
 ```powershell
-git clone https://github.com/moZr/dsh-all-skills-slash.git
+git clone https://github.com/mozrg/dsh-all-skills-slash.git
 # In Harness, install the cloned directory as a local bundle:
 # plugin_manager(action: "install_bundle", target: "C:\\path\\to\\dsh-all-skills-slash")
 ```

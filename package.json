@@ -7,7 +7,7 @@
   "author": "moZr",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moZr/dsh-all-skills-slash.git"
+    "url": "https://github.com/mozrg/dsh-all-skills-slash.git"
   },
   "keywords": ["deepseek-harness", "dsh", "agent-skills", "slash-menu"],
   "type": "module",
