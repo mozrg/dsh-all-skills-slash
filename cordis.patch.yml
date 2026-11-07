@@ -1,0 +1,19 @@
+# Enable local filesystem skills and point it at the skill roots used by this profile.
+# dsh-tool-skill owns the /<skill-name> gesture and the Web UI exposes it in the slash menu.
+- id: skill-filesystem
+  name: '@deepseek-ai/dsh-skill-filesystem'
+  disabled: false
+  config:
+    includeDefaultRoots: true
+    customSkillDirs:
+      # Set DSH_SKILLS_DIR to override the default checkout location.
+      - !!js "process.env.DSH_SKILLS_DIR || ((process.env.USERPROFILE || process.env.HOME || '') + '/deepseek-harness/.agents/skills')"
+      - !!js "(process.env.DSH_SKILLS_DIR || ((process.env.USERPROFILE || process.env.HOME || '') + '/deepseek-harness/.agents/skills')) + '/ui-ux-pro-max-skill-2.15.0/.claude/skills'"
+      - !!js "(process.env.DSH_SKILLS_DIR || ((process.env.USERPROFILE || process.env.HOME || '') + '/deepseek-harness/.agents/skills')) + '/ui-ux-pro-max-skill-2.15.0/cli/assets/skills'"
+    watch: true
+
+- id: tool-skill
+  name: '@deepseek-ai/dsh-tool-skill'
+  disabled: false
+  config:
+    catalogDescriptionMaxLength: 500

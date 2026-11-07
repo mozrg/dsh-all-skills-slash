@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "All local skills in slash menu",
+    "description": "Enables local Agent Skills from project and user skill roots so they appear in the Web GUI slash menu."
+  }
+}
